@@ -26,4 +26,7 @@ dependencies {
     runtimeOnly 'org.springframework.boot:spring-boot-devtools'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+    testImplementation(enforcedPlatform("org.junit:junit-bom:5.4.0")) // JUnit 5 BOM
+    testImplementation 'org.junit.jupiter:junit-jupiter'
 }
