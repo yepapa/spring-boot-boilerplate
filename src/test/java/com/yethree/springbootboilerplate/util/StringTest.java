@@ -22,6 +22,12 @@ class StringTest {
         assertThat(contentString4).isSameAs("10");
 
         assertThat(DummyObject.contentStringDummy).isSameAs("hello");
+
+        new StringBuilder(contentString1).reverse().toString();
+
+
+        String str = "\uD835\uDD38BC"; // Three characters: A, B, C (4 chars)
+        System.out.println(str); // prints ABC (A is the double-struck A)
     }
 
     class DummyObject {

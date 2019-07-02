@@ -1,0 +1,10 @@
+---
+applications:
+  - name: spring-boot-boilerplate
+    buildpacks:
+      - java_buildpack
+    env:
+      JBP_CONFIG_OPEN_JDK_JRE: '{ jre: { version: 11.+ }, memory_calculator: { stack_threads: 25 } }'
+    path: build/libs/spring-boot-boilerplate-0.0.1-SNAPSHOT.jar
+    services:
+      - mysql
